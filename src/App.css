@@ -1,0 +1,49 @@
+.blob.top {
+   position: absolute;
+   right: 0;
+   top: 0;
+}
+
+.blob.bottom {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+.welcome,
+.quiz {
+   flex: 1;
+   display: flex;
+   width: 60%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+
+button.start,
+button.end {
+   background-color: #4D5B9E;
+   color: #F5F7FB;
+   border-radius: 1rem;
+   border-style: none;
+   margin: 0 auto;
+}
+
+button.start {
+   font-size: 1.5rem;
+   padding: 1rem 3rem;
+}
+
+button.end {
+   font-size: 1.25rem;
+   padding: 0.75rem 2rem;
+   margin: 2rem auto 2rem auto;
+}
+
+@media only screen and (max-width: 720px) {
+   button.end {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+   }
+}

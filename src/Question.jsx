@@ -1,4 +1,6 @@
+import './Question.css';
 import Answer from './Answer';
+
 const Question = props => {
   const Answers = props.question.answers.map(answer => (
     <Answer

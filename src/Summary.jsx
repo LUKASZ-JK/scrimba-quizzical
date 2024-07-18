@@ -1,3 +1,4 @@
+import './Summary.css';
 const Summary = props => {
   if (props.check === false) {
     return (

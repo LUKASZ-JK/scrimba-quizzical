@@ -14,15 +14,23 @@ const Quiz = props => {
   });
 
   return (
-    <div className="quiz">
-      {Questions}
-      <Summary
-        check={props.check}
-        result={props.result}
-        handleEnd={props.handleEnd}
-        handleRestart={props.handleRestart}
-      />
-    </div>
+    <>
+      <div className="blob top">
+        <img src="./src/assets/quiz-top.svg" />
+      </div>
+      <div className="quiz">
+        {Questions}
+        <Summary
+          check={props.check}
+          result={props.result}
+          handleEnd={props.handleEnd}
+          handleRestart={props.handleRestart}
+        />
+      </div>
+      <div className="blob bottom">
+        <img src="./src/assets/quiz-bottom.svg" />
+      </div>
+    </>
   );
 };
 

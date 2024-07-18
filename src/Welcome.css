@@ -1,0 +1,23 @@
+h1 {
+   font-size: 4rem;
+}
+
+.loader {
+   margin-top: 2rem;
+   border: 0.25rem solid #F5F7FB;
+   border-top: 0.25rem solid #4D5B9E;
+   border-radius: 50%;
+   width: 2rem;
+   height: 2rem;
+   animation: spin 1.4s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}

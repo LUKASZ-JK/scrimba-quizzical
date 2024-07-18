@@ -7,7 +7,7 @@ const Answer = props => {
     borderColor: '#4D5B9E',
     backgroundColor: 'transparent',
     padding: '0.4rem 1.4rem',
-    margin: '0 0.4rem'
+    margin: '0.4rem'
   };
   if (props.check === false) {
     if (props.answer.selected) {
