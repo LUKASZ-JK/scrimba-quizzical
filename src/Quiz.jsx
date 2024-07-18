@@ -1,6 +1,9 @@
 import Question from './Question';
 import Summary from './Summary';
 
+import QuizTop from './assets/quiz-top.svg';
+import QuizBottom from './assets/quiz-bottom.svg';
+
 const Quiz = props => {
   const Questions = props.questions.map(question => {
     return (
@@ -16,7 +19,7 @@ const Quiz = props => {
   return (
     <>
       <div className="blob top">
-        <img src="./src/assets/quiz-top.svg" />
+        <img src={QuizTop} />
       </div>
       <div className="quiz">
         {Questions}
@@ -28,7 +31,7 @@ const Quiz = props => {
         />
       </div>
       <div className="blob bottom">
-        <img src="./src/assets/quiz-bottom.svg" />
+        <img src={QuizBottom} />
       </div>
     </>
   );

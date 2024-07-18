@@ -1,10 +1,13 @@
 import './Welcome.css';
 
+import WelcomeTop from './assets/welcome-top.svg';
+import WelcomeBottom from './assets/welcome-bottom.svg';
+
 const Welcome = props => {
   return (
     <>
       <div className="blob top">
-        <img src="./src/assets/welcome-top.svg" />
+        <img src={WelcomeTop} />
       </div>
       <div className="welcome">
         <h1>Quizzical</h1>
@@ -17,7 +20,7 @@ const Welcome = props => {
         {<div className={props.ready ? 'hidden loader' : 'loader'}></div>}
       </div>
       <div className="blob bottom">
-        <img src="./src/assets/welcome-bottom.svg" />
+        <img src={WelcomeBottom} />
       </div>
     </>
   );
