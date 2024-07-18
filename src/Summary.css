@@ -23,10 +23,15 @@
       font-size: 1rem;
       margin-bottom: 1rem;
       width: 90%;
+   }
+
+   .summary.results {
       flex-direction: column;
+      justify-content: center;
+      height: 8rem;
    }
 
    .results>button.end {
-      margin: 2rem auto 2rem auto;
+      margin: 1rem auto 2rem auto;
    }
 }
